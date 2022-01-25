@@ -1,0 +1,126 @@
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+}
+.sedans{
+    background-color: #e28525;
+    width: calc(100%/3);
+    padding: 70px;
+}
+.suvs{
+    background-color: #016972;
+    width: calc(100%/3);
+    padding: 70px;
+}
+.luxury{
+    background-color: #00403f;
+    width: calc(100%/3);
+    padding: 70px;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    width: 150px;
+    padding: 20px 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid white;
+}
+.link-sedan{
+    color: #e28525;
+    text-transform: capitalize;
+}
+.link:hover{
+    background-color: #e28525;
+    border: 2px solid white;
+}
+.link:hover .link-sedan{
+    color: white;
+}
+.link-suvs{
+    color: #016972;
+    text-transform: capitalize;
+}
+.link-1{
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    width: 150px;
+    padding: 20px 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid white;
+}
+.link-1:hover{
+    background-color: #016972;
+    border: 2px solid white;
+}
+.link-1:hover .link-suvs{
+    color: white;
+}
+.link-2{
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    width: 150px;
+    padding: 20px 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid white;
+}
+.link-2:hover{
+    background-color: #00403f;
+    border: 2px solid white;
+}
+.link-luxury{
+    color: #00403f;
+    text-transform: capitalize;
+}
+.link-2:hover .link-luxury{
+    color: white;
+}
+@media only screen and (max-width: 375px){
+    .container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .sedans{
+        width: 80%;
+    }
+    .suvs{
+        width: 80%;
+    }
+    .luxury{
+        width: 80%;
+    }
+    .container{
+        overflow-x: hidden;
+    }
+}
